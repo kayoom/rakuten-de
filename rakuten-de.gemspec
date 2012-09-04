@@ -4,7 +4,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "rakuten/version"
 
 Gem::Specification.new do |s|
-  s.name        = "tradebyte"
+  s.name        = "rakuten-de"
   s.version     = Rakuten::VERSION
   s.platform    = Gem::Platform::RUBY
   s.date        = Time.now.strftime("%Y-%m-%d")
@@ -20,10 +20,12 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency "activesupport", ">= 3.1.0"
+  s.add_dependency "rest-client", "~> 1.6.7"
 
   s.add_development_dependency "yard"
   s.add_development_dependency "rspec"
   s.add_development_dependency 'rspec-mocks'
   s.add_development_dependency 'rspec-expectations'
   s.add_development_dependency "bundler"
+  s.add_development_dependency "webmock"
 end
