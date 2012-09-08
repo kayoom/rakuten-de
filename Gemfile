@@ -6,3 +6,7 @@ group :autotest do
   gem 'autotest-fsevent'
   gem 'autotest-growl'
 end
+
+group :test do
+  gem 'rake'
+end
