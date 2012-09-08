@@ -50,6 +50,7 @@ DEPENDENCIES
   autotest-fsevent
   autotest-growl
   bundler
+  jruby-openssl
   rake
   rakuten-de!
   rspec

@@ -10,3 +10,7 @@ end
 group :test do
   gem 'rake'
 end
+
+platform :jruby do
+  gem 'jruby-openssl'
+end
