@@ -1,0 +1,16 @@
+{
+  "result": {
+    "success": "1",
+    "key": {
+      "active": "1",
+      "calls_today": "20",
+      "last_call_datetimestamp": "2010-01-01 20:15:00",
+      "daily_calls_limit": "10000",
+      "permissions": {
+        "products": "write",
+        "orders": "read",
+        "categories": "forbidden"
+      }
+    }
+  }
+}

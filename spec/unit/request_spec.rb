@@ -7,7 +7,7 @@ describe Rakuten::Request do
 
       its(:group)  { should == 'misc' }
       its(:method) { should == 'getKeyInfo' }
-      its(:params) { should == { key: sandbox_key } }
+      its(:params) { should == { key: sandbox_key, format: 'json' } }
     end
 
     context "(group, method, version, params)" do
@@ -16,7 +16,13 @@ describe Rakuten::Request do
       its(:group)   { should == 'misc' }
       its(:method)  { should == 'getKeyInfo' }
       its(:version) { should == 'v2.0' }
-      its(:params)  { should == { key: sandbox_key } }
+      its(:params)  { should == { key: sandbox_key, format: 'json' } }
+    end
+
+    describe 'camelize method' do
+      subject { described_class.new('misc', 'get_key_info') }
+
+      its(:method) { should == 'getKeyInfo' }
     end
   end
 

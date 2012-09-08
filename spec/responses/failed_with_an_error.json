@@ -1,0 +1,14 @@
+{
+  "result": {
+    "success": "-1",
+    "errors": {
+      "error": [
+        {
+          "code": 10,
+          "message": "this is an error",
+          "help": "http://foo.com"
+        }
+      ]
+    }
+  }
+}

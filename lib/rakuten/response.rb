@@ -27,9 +27,13 @@ module Rakuten
       end
     end
 
+    def result
+      fetch(:result, {}).except('success')
+    end
+
     protected
     def status_code
-      fetch :result, :success, -1
+      fetch(:result, :success, -1).to_i
     end
 
     def _errors
