@@ -7,4 +7,7 @@ module Rakuten
 
   autoload :Client
   autoload :Request
+  autoload :Response
+  autoload :Error
+  autoload :ApiError
 end

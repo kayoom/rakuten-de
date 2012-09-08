@@ -5,7 +5,7 @@ describe Rakuten::Request do
     context "(group, method, params)" do
       subject { described_class.new('misc', 'getKeyInfo', key: sandbox_key) }
 
-      its(:group) { should == 'misc' }
+      its(:group)  { should == 'misc' }
       its(:method) { should == 'getKeyInfo' }
       its(:params) { should == { key: sandbox_key } }
     end
@@ -13,10 +13,10 @@ describe Rakuten::Request do
     context "(group, method, version, params)" do
       subject { described_class.new('misc', 'getKeyInfo', 'v2.0', key: sandbox_key) }
 
-      its(:group) { should == 'misc' }
-      its(:method) { should == 'getKeyInfo' }
+      its(:group)   { should == 'misc' }
+      its(:method)  { should == 'getKeyInfo' }
       its(:version) { should == 'v2.0' }
-      its(:params) { should == { key: sandbox_key } }
+      its(:params)  { should == { key: sandbox_key } }
     end
   end
 
