@@ -27,13 +27,21 @@ module Rakuten
       end
     end
 
+    def error
+      errors.first or Rakuten::ApiError.new("Request failed without errors returned")
+    end
+
     def result
-      fetch(:result, {}).except('success')
+      if success?
+        fetch(:result, {}).except('success')
+      else
+        raise error
+      end
     end
 
     protected
     def status_code
-      fetch(:result, :success, -1).to_i
+      @status_code ||= fetch(:result, :success, -1).to_i
     end
 
     def _errors
