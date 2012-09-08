@@ -7,7 +7,14 @@ This is a simple gem to access the _rakuten.de_ REST-Api. You can find
 the documentation for the Api itself
 [here](http://webservice.rakuten.de/documentation/overview).
 
-Get Started
+Requirements:
+-------------
+
+* Ruby 1.9.2 or 1.9.3, or Rubinius in 1.9 mode, or JRuby in 1.9 mode
+* rest-client gem
+* activesupport gem >= 3.1.0
+
+Getting Started
 -----------
 
 Install _rakuten-de_ with `gem install rakuten-de` or add it to your
