@@ -1,7 +1,7 @@
 rakuten-de
 ==========
 [![Build Status](https://secure.travis-ci.org/kayoom/rakuten-de.png)](http://travis-ci.org/kayoom/rakuten-de)
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/ryanb/cancan)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/kayoom/rakuten-de)
 
 This is a simple gem to access the _rakuten.de_ REST-Api. You can find
 the documentation for the Api itself
