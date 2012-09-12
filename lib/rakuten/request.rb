@@ -20,11 +20,15 @@ module Rakuten
     end
 
     def get
-      RestClient.get url, params: params
+      resource.get params: params
     end
 
     def post
-      RestClient.post url, params
+      resource.post params
+    end
+
+    def resource
+      @resource ||= RestClient::Resource.new(url, timeout: -1, open_timeout: 120)
     end
 
     def params

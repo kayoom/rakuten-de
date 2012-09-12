@@ -18,7 +18,9 @@ module Rakuten
         return self if code == 0
 
         @errors_by_code ||= Hash.new do |hash, key|
-          hash[key] = Class.new(self).tap { |c| c.code = key }
+          error_class = Class.new(self).tap { |c| c.code = key }
+          const_set "E#{key}", error_class
+          hash[key] = error_class
         end
 
         @errors_by_code[code]
