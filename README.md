@@ -49,6 +49,16 @@ indicates an error. You can rescue generic API-Errors or only specified.
       # ...
     end
 
+Changelog
+---------
+
+* 0.0.2:
+  * Using larger timeouts
+  * Subclasses of ApiError (e.g. ApiError[15]) now have a proper
+    class.name (-> ApiError::E15)
+* 0.0.1:
+  * initial release
+
 More to come ...
 ----------------
 
